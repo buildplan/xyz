@@ -7,27 +7,47 @@
   <title>alisufyan.xyz</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-  <link rel="manifest" href="/icons/site.webmanifest">
-  <meta name="description"
-    content="This website is used for personal projects. Check out my personal site alisufyan.uk, my professional site Planning.Construction and my blog.">
-  <meta name="keywords" content="personal projects, portfolio, blog, planning, construction">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #222222;
-      /* Default to dark mode */
-      color: #ffffff;
-      /* Default to light text color */
+      background: linear-gradient(to bottom right, #1a1a1a, #333);
+      color: #f4f4f4;
       transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.3s ease;
+    }
+
+    header a:hover {
+      color: #ff9800;
     }
 
     .container {
       max-width: 960px;
-      margin: 0 auto;
+      margin: 100px auto 20px;
       padding: 20px;
       text-align: center;
     }
@@ -37,128 +57,121 @@
       margin-bottom: 20px;
     }
 
-    h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-    }
-
     p {
       font-size: 1.2em;
-      line-height: 1.6;
-      margin-bottom: 30px;
+      line-height: 1.8;
     }
 
     .btn {
       display: inline-block;
       padding: 15px 30px;
-      background-color: #333;
+      background-color: #ff9800;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
       font-size: 1.2em;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.2s;
+      box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);
     }
 
     .btn:hover {
-      background-color: #555;
+      background-color: #e68900;
+      transform: translateY(-2px);
     }
 
-    /* Dark mode styles */
-    body.dark-mode {
-      background-color: #222222;
-      color: #ffffff;
+    form {
+      margin-top: 20px;
+      text-align: left;
     }
 
-    /* Light mode styles (if needed) */
-    body.light-mode {
-      background-color: #f4f4f4;
-      color: #333;
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+      font-size: 1em;
     }
 
-    /* Icon styles */
-    #dark-mode-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      cursor: pointer;
-      font-size: 1.5em;
+    form button {
+      width: 100%;
     }
 
     footer {
       text-align: center;
-      padding: 10px 0;
-      background-color: #333;
-      /* Example footer color */
-      color: white;
-      position: fixed;
-      /* Keep footer at the bottom */
-      bottom: 0;
-      width: 100%;
+      padding: 20px 0;
+      background: rgba(0, 0, 0, 0.9);
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ff9800;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    #dark-mode-toggle {
+      cursor: pointer;
+      font-size: 1.5em;
     }
   </style>
 </head>
 
-<body class="dark-mode">
-  <i id="dark-mode-toggle" class="fas fa-sun"></i>
-  <div class="container">
-    <h1>Welcome to alisufyan.xyz!</h1>
-    <h2>Personal Projects</h2>
-    <p>This website is active and used for personal projects.</p>
-    <p>Check out my personal site <a href="https://alisufyan.uk/">alisufyan.uk</a>, you can also see my professional
-      site <a href="https://planning.construction">Planning.Construction</a> and my blog </p>
-    <br><p><a href="https://blog.planning.construction" class="btn">Visit my blog</a></p>
+<body>
+  <header>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <i id="dark-mode-toggle" class="fas fa-sun"></i>
+  </header>
 
-    <p><hr></p>
+  <div id="home" class="container">
+    <h1>Welcome to alisufyan.xyz</h1>
+    <p>Website for personal projects.</p>
+    <p><a href="https://blog.planning.construction" class="btn">Visit My Blog</a></p>
+  </div>
 
+  <div id="about" class="container">
+    <h2>About Me</h2>
+    <p></p>Ali Sufyan. Construction Planner.</p>
+    <p>Explore my work and professional projects at <a href="https://alisufyan.uk">alisufyan.uk</a>.</p>
+    <p>Check out <a href="https://planning.construction">Planning.Construction</a> for my professional site.</p>
+  </div>
+
+  <div id="contact" class="container">
     <h3>Contact Me</h3>
     <form action="https://formspree.io/f/xjkkngnk" method="POST">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" required></textarea><br><br>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
       <button type="submit" class="btn">Send</button>
     </form>
   </div>
 
   <footer>
-    <nav aria-label="Footer">
-      <p>© <span id="currentYear"></span> alisufyan.xyz</p>
-    </nav>
+    <p>© <span id="currentYear"></span> alisufyan.xyz | Follow me on 
+      <a href="https://twitter.com/alisufyan" target="_blank"><i class="fab fa-twitter"></i></a> 
+      <a href="https://github.com/alisufyan" target="_blank"><i class="fab fa-github"></i></a>
+    </p>
   </footer>
 
   <script>
-    function toggleDarkMode() {
-      const body = document.body;
-      body.classList.toggle('dark-mode');
+    document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
 
-      // Change icon based on mode
-      const icon = document.getElementById('dark-mode-toggle');
-      icon.classList.toggle('fa-sun');
-      icon.classList.toggle('fa-moon');
-
-      // Store the preference
-      localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
-    }
-
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
-    darkModeToggle.addEventListener('click', toggleDarkMode);
-
-    // Check for stored preference on page load
-    const storedDarkMode = localStorage.getItem('dark-mode');
-    if (storedDarkMode === 'true') {
-      toggleDarkMode();
-    }
-
-    // Get the current year
-    const currentYear = new Date().getFullYear();
-    document.getElementById("currentYear").textContent = currentYear;
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
   </script>
 </body>
 
