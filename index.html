@@ -1,125 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alisufyan.xyz</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/icons/site.webmanifest">
-    <meta name="description" content="This website is used for personal projects. Check out my personal site alisufyan.uk, my professional site Planning.Construction and my blog.">
-    <meta name="keywords" content="personal projects, portfolio, blog, planning, construction">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #222222; /* Default to dark mode */
-            color: #ffffff; /* Default to light text color */
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        h2 { 
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #555;
-        }
-        /* Dark mode styles */
-        body.dark-mode {
-            background-color: #222222;
-            color: #ffffff;
-        }
-        /* Light mode styles (if needed) */
-        body.light-mode {
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        /* Icon styles */
-        #dark-mode-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            cursor: pointer;
-            font-size: 1.5em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alisufyan.xyz</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+  <meta name="description"
+    content="This website is used for personal projects. Check out my personal site alisufyan.uk, my professional site Planning.Construction and my blog.">
+  <meta name="keywords" content="personal projects, portfolio, blog, planning, construction">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #222222;
+      /* Default to dark mode */
+      color: #ffffff;
+      /* Default to light text color */
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #555;
+    }
+
+    /* Dark mode styles */
+    body.dark-mode {
+      background-color: #222222;
+      color: #ffffff;
+    }
+
+    /* Light mode styles (if needed) */
+    body.light-mode {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Icon styles */
+    #dark-mode-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 1.5em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #333;
+      /* Example footer color */
+      color: white;
+      position: fixed;
+      /* Keep footer at the bottom */
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
-<body class="dark-mode"> 
-    <i id="dark-mode-toggle" class="fas fa-sun"></i> <div class="container">
-        <h2>Welcome to alisufyan.xyz!</h2>
-        
-        <h3><p>This website is active and used for personal projects.</p></h3>
-        <p>Check out my personal site <a href="https://alisufyan.uk/">alisufyan.uk</a>, you can also see my professional site <a href="https://planning.construction">Planning.Construction</a> and my blog </p>
-            <br><p><a href="https://blog.planning.construction" class="btn">Visit my blog</a></p>
-         
-        <p><hr></p>
 
-        <h3>Contact Me</h3>
-        <form action="https://formspree.io/f/xjkkngnk" method="POST">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" required></textarea><br><br>
-            <button type="submit" class="btn">Send</button>
-        </form>
-    </div>
+<body class="dark-mode">
+  <i id="dark-mode-toggle" class="fas fa-sun"></i>
+  <div class="container">
+    <h1>Welcome to alisufyan.xyz!</h1>
+    <h2>Personal Projects</h2>
+    <p>This website is active and used for personal projects.</p>
+    <p>Check out my personal site <a href="https://alisufyan.uk/">alisufyan.uk</a>, you can also see my professional
+      site <a href="https://planning.construction">Planning.Construction</a> and my blog </p>
+    <br><p><a href="https://blog.planning.construction" class="btn">Visit my blog</a></p>
 
-    <script>
-        function toggleDarkMode() {
-            const body = document.body;
-            body.classList.toggle('dark-mode');
+    <p><hr></p>
 
-            // Change icon based on mode
-            const icon = document.getElementById('dark-mode-toggle');
-            icon.classList.toggle('fa-sun'); 
-            icon.classList.toggle('fa-moon'); 
+    <h3>Contact Me</h3>
+    <form action="https://formspree.io/f/xjkkngnk" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br><br>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </div>
 
-            // Store the preference
-            localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
-        }
+  <footer>
+    <nav aria-label="Footer">
+      <p>Copyright © <span id="currentYear"></span> alisufyan.xyz</p>
+    </nav>
+  </footer>
 
-        const darkModeToggle = document.getElementById('dark-mode-toggle');
-        darkModeToggle.addEventListener('click', toggleDarkMode);
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
 
-        // Check for stored preference on page load
-        const storedDarkMode = localStorage.getItem('dark-mode');
-        if (storedDarkMode === 'true') {
-            toggleDarkMode(); 
-        } 
-    </script>
+      // Change icon based on mode
+      const icon = document.getElementById('dark-mode-toggle');
+      icon.classList.toggle('fa-sun');
+      icon.classList.toggle('fa-moon');
+
+      // Store the preference
+      localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+    }
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    darkModeToggle.addEventListener('click', toggleDarkMode);
+
+    // Check for stored preference on page load
+    const storedDarkMode = localStorage.getItem('dark-mode');
+    if (storedDarkMode === 'true') {
+      toggleDarkMode();
+    }
+
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = currentYear;
+  </script>
 </body>
+
 </html>
